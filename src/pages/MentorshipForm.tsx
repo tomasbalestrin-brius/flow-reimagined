@@ -245,10 +245,11 @@ const MentorshipForm = () => {
                 onChange={(e) => updateFormData('nome', e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Digite seu nome completo"
-                className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:outline-none border-0"
+                className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
                 style={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                  color: 'white'
+                  color: 'white',
+                  border: '2px solid #5D99F8'
                 }}
               />
             </div>
@@ -270,10 +271,11 @@ const MentorshipForm = () => {
                 onKeyPress={handleKeyPress}
                 placeholder="(00) 00000-0000"
                 maxLength={15}
-                className="flex-1 px-4 py-6 text-lg rounded-lg focus:ring-2 focus:outline-none border-0"
+                className="flex-1 px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
                 style={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                  color: 'white'
+                  color: 'white',
+                  border: '2px solid #5D99F8'
                 }}
               />
             </div>
@@ -290,10 +292,11 @@ const MentorshipForm = () => {
               onChange={(e) => updateFormData('email', e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="seu@email.com"
-              className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:outline-none border-0"
+              className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
               style={{ 
                 backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                color: 'white'
+                color: 'white',
+                border: '2px solid #5D99F8'
               }}
             />
           </div>
@@ -312,10 +315,11 @@ const MentorshipForm = () => {
                 onChange={(e) => updateFormData('instagram', e.target.value.replace('@', ''))}
                 onKeyPress={handleKeyPress}
                 placeholder="seuinstagram"
-                className="flex-1 px-4 py-6 text-lg rounded-lg focus:ring-2 focus:outline-none border-0"
+                className="flex-1 px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
                 style={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                  color: 'white'
+                  color: 'white',
+                  border: '2px solid #5D99F8'
                 }}
               />
             </div>
@@ -331,10 +335,11 @@ const MentorshipForm = () => {
               onChange={(e) => updateFormData('nicho', e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Ex: Estética, Saúde, Educação..."
-              className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:outline-none border-0"
+              className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
               style={{ 
                 backgroundColor: 'rgba(255, 255, 255, 0.1)', 
-                color: 'white'
+                color: 'white',
+                border: '2px solid #5D99F8'
               }}
             />
           </div>
