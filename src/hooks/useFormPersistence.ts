@@ -94,6 +94,22 @@ export const useFormPersistence = () => {
 
       if (appointmentError) throw appointmentError;
 
+      // Send to Google Sheets
+      try {
+        const { data: sheetsData, error: sheetsError } = await supabase.functions.invoke('send-to-sheets', {
+          body: formData
+        });
+
+        if (sheetsError) {
+          console.error('Erro ao enviar para Google Sheets:', sheetsError);
+        } else {
+          console.log('Enviado com sucesso para Google Sheets:', sheetsData);
+        }
+      } catch (sheetsError) {
+        console.error('Erro ao chamar função sheets:', sheetsError);
+        // Don't fail the entire form submission if sheets fails
+      }
+
       toast({
         title: "Sucesso!",
         description: "Sua aplicação foi enviada com sucesso.",
