@@ -1,19 +1,14 @@
-import { Hero } from "@/components/Hero";
-import { Features } from "@/components/Features";
-import { HowItWorks } from "@/components/HowItWorks";
-import { Testimonials } from "@/components/Testimonials";
-import { CTA } from "@/components/CTA";
-import { Footer } from "@/components/Footer";
+import { FormHeader } from "@/components/FormHeader";
+import { MultiStepForm } from "@/components/MultiStepForm";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background">
-      <Hero />
-      <Features />
-      <HowItWorks />
-      <Testimonials />
-      <CTA />
-      <Footer />
+    <div className="min-h-screen bg-background dark flex flex-col">
+      <FormHeader mentorName="Cleiton Querobin" />
+      
+      <main className="flex-1 flex items-center justify-center pt-20 pb-12">
+        <MultiStepForm />
+      </main>
     </div>
   );
 };
