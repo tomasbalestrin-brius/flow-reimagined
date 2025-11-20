@@ -6,6 +6,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MentorshipForm from "./pages/MentorshipForm";
 import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
+import Login from "./pages/Login";
+import AdminDashboard from "./pages/AdminDashboard";
+import { ProtectedRoute } from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
 
@@ -18,6 +21,15 @@ const App = () => (
         <Routes>
           <Route path="/" element={<MentorshipForm />} />
           <Route path="/obrigado" element={<ThankYou />} />
+          <Route path="/login" element={<Login />} />
+          <Route 
+            path="/admin" 
+            element={
+              <ProtectedRoute requireAdmin>
+                <AdminDashboard />
+              </ProtectedRoute>
+            } 
+          />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
