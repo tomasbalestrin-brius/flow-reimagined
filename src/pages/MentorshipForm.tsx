@@ -534,10 +534,10 @@ const MentorshipForm = () => {
   };
 
   return (
-    <div className="min-h-screen font-poppins" style={{ backgroundColor: '#020716' }}>
+    <div className="min-h-screen font-poppins flex flex-col" style={{ backgroundColor: '#020716' }}>
       <FormHeader />
       
-      <div className="w-full max-w-xl mx-auto px-5 md:px-8 pb-12">
+      <div className="w-full max-w-xl mx-auto px-5 md:px-8 pb-12 flex-1 flex flex-col justify-center">
         <div className="mb-8 w-full">
           {renderStep()}
           
