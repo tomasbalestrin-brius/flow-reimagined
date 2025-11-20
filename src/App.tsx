@@ -8,7 +8,6 @@ import ThankYou from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
 import Login from "./pages/Login";
 import AdminDashboard from "./pages/AdminDashboard";
-import CRM from "./pages/CRM";
 import { ProtectedRoute } from "./components/ProtectedRoute";
 
 const queryClient = new QueryClient();
@@ -28,14 +27,6 @@ const App = () => (
             element={
               <ProtectedRoute requireAdmin>
                 <AdminDashboard />
-              </ProtectedRoute>
-            } 
-          />
-          <Route 
-            path="/crm" 
-            element={
-              <ProtectedRoute>
-                <CRM />
               </ProtectedRoute>
             } 
           />
