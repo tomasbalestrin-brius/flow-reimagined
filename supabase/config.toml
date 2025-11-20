@@ -1,0 +1,4 @@
+project_id = "cwluzpskecidagfjhveq"
+
+[functions.send-to-sheets]
+verify_jwt = false
