@@ -235,17 +235,17 @@ const MentorshipForm = () => {
       case 1:
         return (
           <div className="space-y-6">
-            <p className="text-lg text-gray-300">
+            <p className="text-base md:text-lg text-gray-300">
               Gostaríamos de saber um pouco mais sobre você para indicar o programa que melhor se encaixa ao seu perfil
             </p>
             <div className="space-y-4">
-              <h2 className="text-2xl font-bold text-white">Qual é o seu nome completo?</h2>
+              <h2 className="text-xl md:text-2xl font-bold text-white">Qual é o seu nome completo?</h2>
               <Input
                 value={formData.nome}
                 onChange={(e) => updateFormData('nome', e.target.value)}
                 onKeyPress={handleKeyPress}
                 placeholder="Digite seu nome completo"
-                className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
+                className="w-full px-4 py-5 md:py-6 text-base md:text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none font-poppins"
                 style={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.1)', 
                   color: 'white',
@@ -259,10 +259,10 @@ const MentorshipForm = () => {
       case 2:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Qual é o seu telefone?</h2>
-            <p className="text-gray-300">Inclua o DDD</p>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Qual é o seu telefone?</h2>
+            <p className="text-sm md:text-base text-gray-300">Inclua o DDD</p>
             <div className="flex items-center gap-2">
-              <span className="text-white text-lg font-semibold px-3 py-6 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
+              <span className="text-white text-base md:text-lg font-semibold px-3 py-5 md:py-6 rounded-lg font-poppins" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
                 +55
               </span>
               <Input
@@ -271,7 +271,7 @@ const MentorshipForm = () => {
                 onKeyPress={handleKeyPress}
                 placeholder="(00) 00000-0000"
                 maxLength={15}
-                className="flex-1 px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
+                className="flex-1 px-4 py-5 md:py-6 text-base md:text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none font-poppins"
                 style={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.1)', 
                   color: 'white',
@@ -285,14 +285,14 @@ const MentorshipForm = () => {
       case 3:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Qual é o seu e-mail?</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Qual é o seu e-mail?</h2>
             <Input
               type="email"
               value={formData.email}
               onChange={(e) => updateFormData('email', e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="seu@email.com"
-              className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
+              className="w-full px-4 py-5 md:py-6 text-base md:text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none font-poppins"
               style={{ 
                 backgroundColor: 'rgba(255, 255, 255, 0.1)', 
                 color: 'white',
@@ -305,9 +305,9 @@ const MentorshipForm = () => {
       case 4:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Qual é o seu Instagram?</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Qual é o seu Instagram?</h2>
             <div className="flex items-center gap-2">
-              <span className="text-white text-lg font-semibold px-3 py-6 rounded-lg" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
+              <span className="text-white text-base md:text-lg font-semibold px-3 py-5 md:py-6 rounded-lg font-poppins" style={{ backgroundColor: 'rgba(255, 255, 255, 0.1)' }}>
                 @
               </span>
               <Input
@@ -315,7 +315,7 @@ const MentorshipForm = () => {
                 onChange={(e) => updateFormData('instagram', e.target.value.replace('@', ''))}
                 onKeyPress={handleKeyPress}
                 placeholder="seuinstagram"
-                className="flex-1 px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
+                className="flex-1 px-4 py-5 md:py-6 text-base md:text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none font-poppins"
                 style={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.1)', 
                   color: 'white',
@@ -329,13 +329,13 @@ const MentorshipForm = () => {
       case 5:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Qual é o seu nicho de atuação?</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Qual é o seu nicho de atuação?</h2>
             <Input
               value={formData.nicho}
               onChange={(e) => updateFormData('nicho', e.target.value)}
               onKeyPress={handleKeyPress}
               placeholder="Ex: Estética, Saúde, Educação..."
-              className="w-full px-4 py-6 text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none"
+              className="w-full px-4 py-5 md:py-6 text-base md:text-lg rounded-lg focus:ring-2 focus:ring-[#5D99F8] focus:outline-none font-poppins"
               style={{ 
                 backgroundColor: 'rgba(255, 255, 255, 0.1)', 
                 color: 'white',
@@ -348,21 +348,21 @@ const MentorshipForm = () => {
       case 6:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Qual é o seu cargo na empresa?</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Qual é o seu cargo na empresa?</h2>
             <RadioGroup value={formData.cargo} onValueChange={(value) => updateFormData('cargo', value)}>
               <div className="space-y-3">
                 {cargoOptions.map((option) => (
                   <Label
                     key={option}
                     htmlFor={`cargo-${option}`}
-                    className="flex items-center p-4 rounded-lg cursor-pointer transition"
+                    className="flex items-center p-3 md:p-4 rounded-lg cursor-pointer transition font-poppins"
                     style={{
                       backgroundColor: formData.cargo === option ? 'rgba(93, 153, 248, 0.2)' : 'rgba(255, 255, 255, 0.05)',
                       border: `1px solid ${formData.cargo === option ? '#5D99F8' : 'rgba(255, 255, 255, 0.1)'}`
                     }}
                   >
                     <RadioGroupItem value={option} id={`cargo-${option}`} className="mr-3" />
-                    <span className="text-white text-lg">{option}</span>
+                    <span className="text-white text-base md:text-lg">{option}</span>
                   </Label>
                 ))}
               </div>
@@ -373,21 +373,21 @@ const MentorshipForm = () => {
       case 7:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Qual é o seu faturamento mensal?</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Qual é o seu faturamento mensal?</h2>
             <RadioGroup value={formData.faturamento} onValueChange={(value) => updateFormData('faturamento', value)}>
               <div className="space-y-3">
                 {faturamentoOptions.map((option) => (
                   <Label
                     key={option}
                     htmlFor={`faturamento-${option}`}
-                    className="flex items-center p-4 rounded-lg cursor-pointer transition"
+                    className="flex items-center p-3 md:p-4 rounded-lg cursor-pointer transition font-poppins"
                     style={{
                       backgroundColor: formData.faturamento === option ? 'rgba(93, 153, 248, 0.2)' : 'rgba(255, 255, 255, 0.05)',
                       border: `1px solid ${formData.faturamento === option ? '#5D99F8' : 'rgba(255, 255, 255, 0.1)'}`
                     }}
                   >
                     <RadioGroupItem value={option} id={`faturamento-${option}`} className="mr-3" />
-                    <span className="text-white text-lg">{option}</span>
+                    <span className="text-white text-base md:text-lg">{option}</span>
                   </Label>
                 ))}
               </div>
@@ -398,21 +398,21 @@ const MentorshipForm = () => {
       case 8:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Qual é a sua principal dificuldade hoje?</h2>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Qual é a sua principal dificuldade hoje?</h2>
             <RadioGroup value={formData.dificuldade} onValueChange={(value) => updateFormData('dificuldade', value)}>
               <div className="space-y-3">
                 {dificuldadeOptions.map((option) => (
                   <Label
                     key={option}
                     htmlFor={`dificuldade-${option}`}
-                    className="flex items-center p-4 rounded-lg cursor-pointer transition"
+                    className="flex items-center p-3 md:p-4 rounded-lg cursor-pointer transition font-poppins"
                     style={{
                       backgroundColor: formData.dificuldade === option ? 'rgba(93, 153, 248, 0.2)' : 'rgba(255, 255, 255, 0.05)',
                       border: `1px solid ${formData.dificuldade === option ? '#5D99F8' : 'rgba(255, 255, 255, 0.1)'}`
                     }}
                   >
                     <RadioGroupItem value={option} id={`dificuldade-${option}`} className="mr-3" />
-                    <span className="text-white text-lg">{option}</span>
+                    <span className="text-white text-sm md:text-lg">{option}</span>
                   </Label>
                 ))}
               </div>
@@ -422,7 +422,7 @@ const MentorshipForm = () => {
                 value={formData.outraDificuldade}
                 onChange={(e) => updateFormData('outraDificuldade', e.target.value)}
                 placeholder="Descreva sua principal dificuldade..."
-                className="w-full px-4 py-4 text-lg rounded-lg focus:ring-2 focus:outline-none border-0 min-h-[120px]"
+                className="w-full px-4 py-4 text-base md:text-lg rounded-lg focus:ring-2 focus:outline-none border-0 min-h-[120px] font-poppins"
                 style={{ 
                   backgroundColor: 'rgba(255, 255, 255, 0.1)', 
                   color: 'white'
@@ -435,24 +435,24 @@ const MentorshipForm = () => {
       case 9:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">
+            <h2 className="text-xl md:text-2xl font-bold text-white">
               O investimento para participar dos nossos programas é de R$ 9.997 a R$ 100k
             </h2>
-            <p className="text-gray-300">Gostaria de seguir com o processo seletivo?</p>
+            <p className="text-sm md:text-base text-gray-300">Gostaria de seguir com o processo seletivo?</p>
             <RadioGroup value={formData.investimento} onValueChange={(value) => updateFormData('investimento', value)}>
               <div className="space-y-3">
                 {investimentoOptions.map((option) => (
                   <Label
                     key={option}
                     htmlFor={`investimento-${option}`}
-                    className="flex items-center p-4 rounded-lg cursor-pointer transition"
+                    className="flex items-center p-3 md:p-4 rounded-lg cursor-pointer transition font-poppins"
                     style={{
                       backgroundColor: formData.investimento === option ? 'rgba(93, 153, 248, 0.2)' : 'rgba(255, 255, 255, 0.05)',
                       border: `1px solid ${formData.investimento === option ? '#5D99F8' : 'rgba(255, 255, 255, 0.1)'}`
                     }}
                   >
                     <RadioGroupItem value={option} id={`investimento-${option}`} className="mr-3" />
-                    <span className="text-white text-lg">{option}</span>
+                    <span className="text-white text-base md:text-lg">{option}</span>
                   </Label>
                 ))}
               </div>
@@ -463,8 +463,8 @@ const MentorshipForm = () => {
       case 10:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Escolha a data da sua call</h2>
-            <p className="text-gray-300">Selecione o melhor dia para conversar com um especialista</p>
+            <h2 className="text-xl md:text-2xl font-bold text-white">Escolha a data da sua call</h2>
+            <p className="text-sm md:text-base text-gray-300">Selecione o melhor dia para conversar com um especialista</p>
             <RadioGroup value={formData.dataAgendamento} onValueChange={(value) => updateFormData('dataAgendamento', value)}>
               <div className="space-y-3">
                 {availableDates.map((date) => {
@@ -473,14 +473,14 @@ const MentorshipForm = () => {
                     <Label
                       key={dateStr}
                       htmlFor={`date-${dateStr}`}
-                      className="flex items-center p-4 rounded-lg cursor-pointer transition"
+                      className="flex items-center p-3 md:p-4 rounded-lg cursor-pointer transition font-poppins"
                       style={{
                         backgroundColor: formData.dataAgendamento === dateStr ? 'rgba(93, 153, 248, 0.2)' : 'rgba(255, 255, 255, 0.05)',
                         border: `1px solid ${formData.dataAgendamento === dateStr ? '#5D99F8' : 'rgba(255, 255, 255, 0.1)'}`
                       }}
                     >
                       <RadioGroupItem value={dateStr} id={`date-${dateStr}`} className="mr-3" />
-                      <span className="text-white text-lg capitalize">{formatDateLong(date)}</span>
+                      <span className="text-white text-base md:text-lg capitalize">{formatDateLong(date)}</span>
                     </Label>
                   );
                 })}
@@ -492,19 +492,19 @@ const MentorshipForm = () => {
       case 11:
         return (
           <div className="space-y-4">
-            <h2 className="text-2xl font-bold text-white">Escolha o horário</h2>
-            <p className="text-gray-300">
+            <h2 className="text-xl md:text-2xl font-bold text-white">Escolha o horário da sua call</h2>
+            <p className="text-sm md:text-base text-gray-300">
               Horários disponíveis para {formData.dataAgendamento && formatDateLong(new Date(formData.dataAgendamento + 'T00:00:00'))}
             </p>
             {availableSlots.length === 0 ? (
-              <p className="text-yellow-400 text-center py-8">Nenhum horário disponível para esta data.</p>
+              <p className="text-yellow-400 text-center py-8 text-sm md:text-base font-poppins">Nenhum horário disponível para esta data.</p>
             ) : (
-              <div className="grid grid-cols-3 gap-3">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {availableSlots.map((hour) => (
                   <Label
                     key={hour}
                     htmlFor={`hour-${hour}`}
-                    className="flex items-center justify-center p-4 rounded-lg cursor-pointer transition text-center"
+                    className="flex items-center justify-center p-3 md:p-4 rounded-lg cursor-pointer transition text-center font-poppins"
                     style={{
                       backgroundColor: formData.horarioAgendamento === hour ? '#5D99F8' : 'rgba(255, 255, 255, 0.05)',
                       border: `1px solid ${formData.horarioAgendamento === hour ? '#5D99F8' : 'rgba(255, 255, 255, 0.1)'}`,
@@ -520,7 +520,7 @@ const MentorshipForm = () => {
                       onChange={(e) => updateFormData('horarioAgendamento', e.target.value)}
                       className="sr-only"
                     />
-                    <span className="text-lg font-semibold">{hour}</span>
+                    <span className="text-base md:text-lg font-semibold">{hour}</span>
                   </Label>
                 ))}
               </div>
@@ -534,26 +534,26 @@ const MentorshipForm = () => {
   };
 
   return (
-    <div className="min-h-screen" style={{ backgroundColor: '#020716' }}>
+    <div className="min-h-screen font-poppins" style={{ backgroundColor: '#020716' }}>
       <FormHeader />
       
-      <div className="max-w-xl mx-auto px-4 md:px-8 pb-12">
-        <div className="mb-8">
+      <div className="w-full max-w-xl mx-auto px-5 md:px-8 pb-12">
+        <div className="mb-8 w-full">
           {renderStep()}
           
           {error && (
             <div className="mt-4 p-3 rounded-lg" style={{ backgroundColor: 'rgba(239, 68, 68, 0.2)', border: '1px solid rgb(239, 68, 68)' }}>
-              <p className="text-red-400 text-sm text-center">{error}</p>
+              <p className="text-red-400 text-sm text-center font-poppins">{error}</p>
             </div>
           )}
         </div>
 
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-4 w-full">
           {currentStep > 1 && (
             <Button
               onClick={handleBack}
               variant="ghost"
-              className="text-gray-400 hover:text-white hover:bg-transparent"
+              className="text-gray-400 hover:text-white hover:bg-transparent font-poppins text-sm md:text-base"
             >
               Voltar
             </Button>
@@ -561,7 +561,7 @@ const MentorshipForm = () => {
           
           <Button
             onClick={handleContinue}
-            className="ml-auto px-8 py-6 text-lg font-semibold rounded-lg"
+            className="ml-auto px-6 md:px-8 py-4 md:py-6 text-base md:text-lg font-poppins font-semibold rounded-lg"
             style={{ backgroundColor: '#5D99F8', color: 'white' }}
           >
             {currentStep === 11 ? 'Confirmar Agendamento' : 'Continuar'}
