@@ -1,19 +1,24 @@
-interface FormHeaderProps {
-  logoUrl?: string;
-  mentorName: string;
-}
-
-export const FormHeader = ({ logoUrl, mentorName }: FormHeaderProps) => {
+const FormHeader = () => {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 px-6 py-4 flex items-center justify-between">
-      <div className="flex items-center gap-2">
-        {logoUrl ? (
-          <img src={logoUrl} alt="Logo" className="h-10" />
-        ) : (
-          <div className="text-foreground font-bold text-xl">Bethel Educação</div>
-        )}
+    <div className="w-full pt-8 px-4 md:px-8 mb-8">
+      <div className="max-w-4xl mx-auto">
+        <div className="flex items-center justify-between mb-6">
+          <img 
+            src="/Logo_Bethel_branco.png" 
+            alt="Bethel Educação" 
+            className="h-8 md:h-10 object-contain"
+          />
+          <span className="text-white font-semibold text-base md:text-lg">Cleiton Querobin</span>
+        </div>
+        <div 
+          className="w-full h-px"
+          style={{
+            background: 'linear-gradient(90deg, transparent 0%, rgba(93, 153, 248, 0.5) 20%, rgba(93, 153, 248, 0.8) 50%, rgba(93, 153, 248, 0.5) 80%, transparent 100%)'
+          }}
+        />
       </div>
-      <div className="text-foreground font-medium">{mentorName}</div>
-    </header>
+    </div>
   );
 };
+
+export default FormHeader;
